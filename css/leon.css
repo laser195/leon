@@ -609,4 +609,7 @@ header .container ul li a{
         text-align: center;
         font-size: 1.2rem;
     } 
+    header .container ul li {
+        font-size: 2rem;
+    }
 }
