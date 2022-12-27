@@ -20,7 +20,6 @@ body{
     background: #f6f6f6;
     margin-left: auto;
     margin-right: auto;
-    scroll-behavior: smooth;
 }
 
 main{
@@ -303,7 +302,7 @@ header .container ul li a{
     
 }
 
-@media  (max-width: 576px) {
+@media only screen and (max-width: 993px) and (min-width:421px){
 
     header .container ul{
         padding: 2.5%;
@@ -312,7 +311,10 @@ header .container ul li a{
         border-radius: 20%;
         
     }
-
+    .greetng{
+        height: 30vh;
+    }
+    
      .work{
         display: flex;
         flex-direction: column;
@@ -465,7 +467,7 @@ header .container ul li a{
     color: #10cab7;
     font-style: normal;
 }
-@container (min-width: 768px) {
+@container (min-width: 993px) and (min-width:421px){
     header .container ul{
         padding: 2.5%;
         position: relative;
@@ -474,7 +476,7 @@ header .container ul li a{
     }
 }
 
-@container (max-width: 992px) {
+@container (max-width: 993px) and (min-width:421px) {
     header .container ul{
         padding: 2.5%;
         position: relative;
@@ -485,7 +487,7 @@ header .container ul li a{
     
 }
 
-@media (max-width: 576px) {
+@media (max-width: 993px){
     .draw{
         display: none;
     }
@@ -505,4 +507,106 @@ header .container ul li a{
         background: #f6f6f6;
      }
 
+}
+@media (max-width: 992px) {
+    .greetng{
+        height: min(40vh,20%);
+        padding: 60px;
+    }
+    .greetng h2{
+        font-size: 2rem;
+    }
+    .greetng p{
+        font-size: 1rem;
+        width: 70%;
+    }
+    .work{
+        flex-direction: column;
+    }
+    .work .card{
+        width:60%;
+        height: fit-content;
+    }
+    .work .card i{
+       font-size:8cqi ;
+    }
+    .work h3 {
+        font-size: 2.6rem;
+    }
+    .work .card p {
+        font-size: 2.6rem;
+    }
+    .work-container h1 {
+        font-size: 5rem;
+        color: #f6f6f6;
+        font-weight: 900;
+    }
+    .text{
+        font-size: 1.2rem;
+    }
+    .Serivces-b{
+        height: 80vh;
+        grid-template-columns: 0 2fr ;
+        grid-template-rows: auto;
+        margin-bottom: 300px;
+        
+    }
+    .Serivces-b .draw {
+        display: none;
+    }
+    .Serivces-b .card-sec{
+        width: 80vw;
+        height: min(750px,20%);
+        grid-template-columns: 1fr 2fr 1fr 2fr;
+        grid-template-rows: 2fr 2fr;
+    }
+    .Serivces-b .card-sec .scard p{
+        font-size: .7rem;
+    }
+    .Serivces-b .card-sec .scard h3{
+        font-size: 1.8rem;
+    }
+    #projects{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    #projects .project{
+        width: 80%;
+        height: max(200px,20vh);
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr;
+        grid-template-rows: 50px auto;
+        grid-gap: 20px;
+    }
+    #projects .project img{
+        width: 32vw;
+        height: 33vw;
+    }
+    #projects .project p {
+        grid-column: 2 / span 2;
+        font-size: 1rem;
+    }
+    #projects .project h3 {
+        font-size: 1.1rem;
+    }
+    #about .about-grid{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-items: center
+    }
+    #about .draw{
+        z-index: -2;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        display: none;
+    }
+    #about h4{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    #about p{
+        text-align: center;
+        font-size: 1.2rem;
+    } 
 }
